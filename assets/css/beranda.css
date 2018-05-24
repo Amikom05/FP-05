@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center{
+  text-align: center;
+}
+
+#logoku{
+  width: 45%
+}
+
+.imagesosmed{
+  width: 50px;
+  display: inline;
+}
+
+.backgroud-green{
+  background-color: #f2f7ff;
+}
+#amikom{
+  width: 40%
+}
+.bank{
+  width: 40%
+}
+.jumbotron.jumbotron-fluid{
+  margin-bottom: 0 !important
+}
+.jumbotron.jumbotron-fluid.black{
+  background-color: black;
+  position: relative;
+  bottom: 0
+}
+.toplogo{
+  width: 15%;
+  padding-right: 10px;
+}
+.logosaya{
+  display: contents;
+  margin-right: 10px;
+
+}
+.carousel-item{
+  height: 600px
+}
+.ratakanan{
+  text-align: right;
+}
+.tengah{
+  text-align: center;
+  margin: 15px;
+}
+.coba{
+margin: 15px;
+}
+.fix{
+  position: fixed;
+}
+#navbarutama.navtransparant{
+  background: none !important;
+  color: white;
+}
