@@ -1,0 +1,14 @@
+.huruf{
+	list-style: upper-alpha;
+}
+.tengah{
+	text-align: center;
+}
+.jarak{
+    padding: 40px;
+    margin:15px;
+}
+.background{
+    background: #dee7f4;
+    margin: 10px;
+}

@@ -1,0 +1,18 @@
+.tengah{
+	margin: center;
+}
+.background{
+    background: #dee7f4;
+    margin: center;
+
+}
+.huruf{
+	list-style: upper-alpha;
+}
+.font-oxygen{
+	font-family: 'Oxygen', sans-serif;
+
+}
+.jarak{
+margin: 15px;
+}
