@@ -1,0 +1,10 @@
+body{
+    background-color: #f2f3f4;
+}
+form {
+    border: 3px solid white;
+    background-color: white;
+}
+.jarak{
+    margin: 10px;
+}
