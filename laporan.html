@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laporan</title>
+	<script type="text/javascript" src="assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<!--meta fb-->
+  	<meta property="og:url"           content="https://indrasap0014.github.io/berita.html" />
+  	<meta property="og:type"          content="website" />
+ 	<meta property="og:title"         content="Donasi bersama" />
+  	<meta property="og:description"   content="Donasi untuk korban" />
+  	<meta property="og:image"         content="https://indrasap0014.github.io/assets/img/aceh.png" />
+  	<!--end-->
+</head>
+<body>
+<!--fbsdk-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0&appId=197833917517658&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+<!--end-->
+<!-- navbar -->
+<div ng-include="'navbar.html'"></div>
+<!--Main-->
+<div class="container">
+	<div class="col col-md-6 offset-md-3">
+		<form>
+			<p>Terima Kasih Atas Donasi Anda</p>
+			<div class="row">
+				<div class="col-md-8">
+					<p>ID Donasi</p>
+				</div>
+				<div class="col-md-4">
+					<p>0014</p>
+				</div>
+				<div class="col-md-6">
+					<p>Nominal Donasi</p>
+				</div>
+				<div class="col-md-1">
+					<p>Rp</p>
+				</div>
+				<div class="col-md-5">
+					<p>86.000</p>
+				</div>
+				<div class="col-md-6">
+					<p>Kode Unik (akan di donasikan)</p>
+				</div>
+				<div class="col-md-1">
+					<p>Rp</p>
+				</div>
+				<div class="col-md-5">
+					<p>161</p>
+				</div>
+			</div>
+			<hr class="my-1">
+			<div class="row">
+				<div class="col-md-6 ">
+					<p>Total</p>
+				</div>
+				<div class="col-md-1 ">
+					<p>Rp</p>
+				</div>
+				<div class="col-md-5 ">
+					<p>86.161</p>
+				</div>
+			</div>
+			<div>
+				<p><strong>Penting! Transfer tepat Rp.86.161 </strong>agar donasi Anda terverifikasi secara otomatis oleh sistem tanpa perlu konfirmasi.</p>
+			</div>
+			<p>Silahkan transfer ke:</p>
+			<table >
+				<tr >
+					<td rowspan="4"><img src="assets/img/mandiri.png" width="150px"></td>
+					<td >Bank mandiri</td>
+				</tr>
+				<tr>
+					<td>Cabang Condong Catur</td>
+				</tr>
+				<tr>
+					<td><p>No. Rekening 161-10-0140903-2</p></td>
+				</tr>
+				<tr>
+					<td>Atas nama YAYASAN DONASIKU</td>
+				</tr>
+			</table>
+			<div class="fb-share-button col-md-6" data-href="https://indrasap0014.github.io/berita.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findrasap0014.github.io%2Fberita.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Facebook</a></div>
+		</form>	
+	</div>
+</div>
+<!-- Footer -->
+<div ng-include="'footer.html'"></div> 
+</body>
+</html>
