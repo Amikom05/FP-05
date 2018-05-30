@@ -1,46 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
-	<title></title>
+	<title>Bantuan Korban</title>
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/berita.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/berita.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
+  <!--meta fb-->
+  <meta property="og:url"           content="https://indrasap0014.github.io/berita.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Donasi bersama" />
+  <meta property="og:description"   content="Donasi untuk korban" />
+  <meta property="og:image"         content="https://indrasap0014.github.io/assets/img/aceh.png" />
+  <!--end-->
 
 </head>
 <body>
+  <!--fbsdk-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0&appId=197833917517658&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!--end-->
 <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarutama">
-<a class="logosaya" href="index.html"><img class="toplogo" src="assets/img/logo.png" alt="Card img cap"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Galang Dana</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Donasi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Masuk</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Daftar</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+ <div ng-include="'navbar.html'"></div>
  <!--Main-->
  <center>
     <h2 id="judul">Bantuan Korban Tsunami Aceh</h2>
@@ -48,7 +38,7 @@
  <div class="container">
  	<div class="row">
  		<div class="col-md-7 offset-md-1">
- 			<div class="card" style="width: 30rem;"> 
+      <div class="card" style="width: 30rem;"> 
         <img class="card-img-top" src="assets/img/aceh.png" alt="gambar-aceh">
       </div>
       <br>
@@ -59,7 +49,7 @@
       <div class="col-md-9 bg-light">
         <p>Indra Saputra</p>
       </div>
- 		</div>
+    </div>
     <div class="col-md-4">
       <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" style="width: 89%" aria-valuemax="100"></div>
@@ -74,40 +64,15 @@
           <p>10 hari</p>
         </div>
       </div>
-
       <a href="donasi.html"><button type="button" class="btn btn-info btn-lg btn-block rounded">DONASI SEKARANG</button></a>
+      <br>
+      <div class="row offset-md-1">
+        <div class="fb-share-button col-md-6" data-href="https://indrasap0014.github.io/berita.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findrasap0014.github.io%2Fberita.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Bagikan Ke Teman Anda</a></div>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://indrasap0014.github.io/berita" data-hashtags="donasiku" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
  	</div>	
  </div>
- <!-- Footer -->
-	<div class="row backgroud-grey">
-	<div class="col-md-3">
-		<p>LAYANAN DONATUR</p>
-		<p><a>GALANG DANA</a></p>
-		<p><a>DONASI</a></p>
-		<p><a>BIRTHDAY</a></p>
-		</div>
-	<div class="col-md-3">
-		<p>JELAJAHI DONASIKU</p>
-		<p><a>APA ITU DONASIKU</a></p>
-		<p><a>SYARAT DAN KETENTUAN</a></p>
-		<p><a href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Kebijakan/kebijakan.html">KEBIJAKAN</a></p>
-		
-	</div>
-	<div class="col-md-3">
-		<p>SPONSORSHIP</p>
-			<img id="amikom" src="assets/img/amikom.png" alt="Card image cap">
-	</div>
-	<div class="col-md-3 center">
-		<p>PARTNERSHIP</p>
-		
-			<img class="bank" src="assets/img/bri.png" alt="Card image cap">
-			<br>
-			<img class="bank" src="assets/img/mandiri.png" alt="Card image cap">
-			<img class="bank" src="assets/img/bni.png" alt="Card image cap">
-
-		</div>
-	</div>
-</div>
+<div ng-include="'footer.html'"> </div>
 </body>
 </html>
