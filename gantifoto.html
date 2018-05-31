@@ -9,9 +9,16 @@
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
   <link rel="stylesheet" type="text/css" href="assets/css/kebijakan.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> </head>
+  <script type="text/javascript " src="assets/js/theme.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> 
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+</head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarutama">
     <a class="logosaya" href="index.html">
       <img class="toplogo" src="assets/img/logo.png" alt="Card img cap"> </a>
@@ -44,6 +51,8 @@
       </form>
     </div>
   </nav>
+
+  <!-- Profil -->
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -73,7 +82,27 @@
               <tr>
                 <td class="w-25">Profil Picture</td>
                 <td>
-                  <a href="#" class="btn btn-outline-primary" style="background-image: url('../icon-camera-128.png');background-position:center top;background-size:auto;background-repeat:no-repeat;"></a>
+               
+<!-- Upload  -->
+<form id="file-upload-form" class="uploader">
+  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+  <label for="file-upload" id="file-drag">
+    <img id="file-image" src="#" alt="Preview" class="hidden">
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select an image</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+</form>
                 </td>
               </tr>
               <tr>
@@ -84,7 +113,7 @@
             </tbody>
           </table>
           <br>
-          <div class="col-md-12">
+          <div class="col-md-12 tengah">
             <center>
               <a class="btn w-50 btn-primary" href="#">
                 <b class="text-dark">SAVE</b>
@@ -96,6 +125,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Logo -->
   <div class="row"> </div>
   <div class="row">
     <div class="col-md-6">
@@ -111,6 +142,8 @@
         <img class="imagesosmed" src="assets/img/yt.png" alt="Card image cap"> </a>
     </div>
   </div>
+
+  <!-- Footer -->
   <div class="row backgroud-green">
     <div class="col-md-3">
       <p>LAYANAN DONATUR</p>
