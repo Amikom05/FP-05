@@ -6187,8 +6187,9 @@ html, body {
 }
 
 body {
-  padding: 2rem;
+  padding: 0;
   background: #f8f8f8;
+
 }
 
 h2 {
@@ -6342,6 +6343,6 @@ p {
 }
 
 .tengah{
-   text-align: center;
-  
+  text-align: center;
+  margin: 15px;
 }

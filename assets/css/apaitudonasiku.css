@@ -63,3 +63,20 @@ h1
 	background-color:rgb(60,90,149);
 	height:1200px;
 }
+.fotobg{
+    background-image: url("../img/hanan.jpg") !important;
+}
+.notransparan{
+    z-index: 10;
+}
+.foto-overlay{
+    
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    z-index: 9;
+}
+.jumbotron.fotobg{
+    padding: 0;
+
+}
