@@ -1,45 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 	<title></title>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
   <link rel="stylesheet" type="text/css" href="assets/css/apaitudonasiku.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+   <script type="text/javascript" src="assets/js/angular.min.js"></script>
 </head>
 <body>
-
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbarutama">
-		<a class="logosaya" href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/index.html"><img class="toplogo" src="assets/img/logo.png" alt="Card img cap"></a>
-  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  	</button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Galang Dana</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/donasi.html">Donasi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Masuk</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/registrasi.htm">Daftar</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+<!--Navbar-->
+ <div ng-include="'navbar.html'"></div>
 
 	<!-- Judul -->
 <div class="container">
@@ -133,68 +104,7 @@
 	</div>
 </div>
 </div>
-
- <!-- Logo -->
-<div class="container">
-<div class="row jarak">
-	<div class="col-md-6">
-
-			<img id="logoku" src="assets/img/logo.png" alt="Card image cap">
-
-		</div>
-	<div class="col-md-6 ratakanan">
-			Ikuti Kami :
-			<a href="https://web.facebook.com/hanantoilhambayuaji"><img class="imagesosmed" src="assets/img/facebook.png" alt="Card image cap" ></a>
-			<a href="https://twitter.com/HnnIlham"><img class="imagesosmed" src="assets/img/Twitter.png" alt="Card image cap"></a>
-			<a href="https://www.instagram.com/hanantoilham/"><img class="imagesosmed" src="assets/img/Ig.png" alt="Card image cap"></a>
-			<a href="https://www.youtube.com/channel/UC8dGChyZFJ1SehXntm6CDsw/videos?disable_polymer=1"><img class="imagesosmed" src="assets/img/yt.png" alt="Card image cap"></a>
-			<div class="coba"></div>
-		</div>
-	</div>
-
- <!-- Footer -->
-
- 	<section id="footer">
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-3">
-					<h5>LAYANAN DONATUR</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Galang Dana</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Donasi</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Brithday</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-3">
-					<h5>JELAJAHI DONASIKU</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Apa Itu Donasiku</a></li>
-						<li><a href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/syarat.html"><i class="fa fa-angle-double-right"></i>Syarat dan Ketentuan?</a></li>
-						<li><a href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Final%20Project%2005/kebijakan.html"><i class="fa fa-angle-double-right"></i>Kebijakan</a></li>
-					</ul>
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-3">
-				<h5>SPONSORSHIP</h5>
-						<a href="http://amikom.ac.id/"><img id="amikom" src="assets/img/amikom.png" alt="Card image cap"></a>
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-3 center">
-				<h5>PARTNERSHIP</h5>
-				<a href="https://bri.co.id/"><img class="bank" src="assets/img/bri.png" alt="Card image cap"></a>
-				<br>
-				<a href="https://www.bankmandiri.co.id/"><img class="bank" src="assets/img/mandiri.png" alt="Card image cap"></a>
-				<a href="https://ibank.bni.co.id/"><img class="bank" src="assets/img/bni.png" alt="Card image cap"></a>
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black">
-					<p>Website Ini Dibuat Hanya Untuk Membantu Masyarakat Yang Membutuhkan Bantuan</p>
-					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.Donasiku.github.io" target="_blank">Donasiku</a></p>
-				</div>
-				</hr>
-			</div>
-			</div>	
-	</div>
-</div>
+<!--footer.-->
+<div ng-include="'footer.html'"> </div>
 </body>
 </html>
