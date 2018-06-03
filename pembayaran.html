@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="assets/js/angular.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/pembayaran.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
@@ -28,7 +29,7 @@
     				</li>
     </ul>
     <br>
-    <form onSubmit="validasi()">
+    <form name="frm-pembayaran" method="POST" action="laporan.html">
       <center>
         <p>NOMOR HP</p>
         <p>PASTIKAN NOMOR HP ANDA AKTIF SAAT MENERIMA SMS STATUS DONASI ANDA</p>
@@ -37,7 +38,7 @@
         <div class="container">
           <center>
             <div class="col-md-10">
-              <input class="form-control" type="text"  name="nomor" id="nomor" maxlength="10" class="required">
+              <input class="form-control" type="text"  name="nomor" id="nomor" maxlength="10" required>
             </div>
           </center>
         </div>
@@ -48,24 +49,24 @@
         </center>
         <div class="radios border">
           <div class="custom-control custom-radio jarak ">
-            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" required>
             <label class="custom-control-label" for="customRadio1"><img src="assets/img/mandiri.png" width="15%" > BANK MANDIRI</label>
           <hr class="my-2">
           </div>
         <div class="custom-control custom-radio jarak ">
-          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" required>
           <label class="custom-control-label" for="customRadio2"><img src="assets/img/bri.png" width="10%"> BANK BRI</label>
           <hr class="my-2">
         </div>
         <div class="custom-control custom-radio jarak">
-          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" required>
           <label class="custom-control-label" for="customRadio3"><img src="assets/img/bni.png" width="15%"> BANK BNI</label>
           <hr class="my-2">
         </div>
         </div>
         <br>
         <div class="col-md-2 offset-md-5">
-        <a href="#"><button type="button" class="btn btn-primary btn-md jarak">Setuju</button></a>
+          <input type="submit" class="btn btn-primary btn-sm" value="lanjut"></input>
         </div>
     </form>
   </div>

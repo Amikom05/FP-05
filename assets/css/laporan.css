@@ -1,0 +1,11 @@
+body{
+    background-color: #f2f3f4;
+}
+form {
+    border: 3px solid white;
+    background-color: white;
+    padding: 20px;
+}
+.bgdiv{
+	background-color: #baf989;
+}

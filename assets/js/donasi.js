@@ -1,4 +1,4 @@
- $(document).ready(function(){
+$(function(){
         $("#number").keypress(function(data){
             if(data.which!=8 && data.which!=0 && (data.which<48 || data.which>57))
             {
@@ -6,11 +6,17 @@
             }
         });
     });
-$(document).ready(function(){
-	 $('button').click(function(){
-		 var rupiah = $('#number').val();
-		 if(rupiah == ''){
-			 alert('donasi tidak boleh kosong')	 
-		} 
-	})
-})
+
+$(function(){
+    $("form[name='frm-donasi']"),validate({
+        rules: {
+            number: "required"        
+        },
+        messages: {
+            number : "Isi Nominal Donasi Anda"    
+        },
+        submitHandler : function(form){
+        form.submit();
+        }
+    });
+});
