@@ -7,6 +7,7 @@
 	<title>Laporan</title>
 	<script type="text/javascript" src="assets/js/angular.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/laporan.css">
@@ -28,9 +29,9 @@
     js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0&appId=197833917517658&autoLogAppEvents=1';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-<!--end-->
+  <!--end-->
 <!-- navbar -->
-<div ng-include="'navbar.html'"></div>
+ <div ng-include="'navbar.html'"></div>
 <!--Main-->
 <div class="container">
 	<div class="col col-md-6 offset-md-3">
@@ -94,7 +95,9 @@
 					<td>Atas nama YAYASAN DONASIKU</td>
 				</tr>
 			</table>
-			<div class="fb-share-button col-md-6 offset-md-3" data-href="https://indrasap0014.github.io/berita.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findrasap0014.github.io%2Fberita.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Sebarkan ke teman anda</a></div>
+			<div class="offset-md-3">
+				<div class="fb-share-button col-md-6 offset-md-3" data-href="https://indrasap0014.github.io/berita.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findrasap0014.github.io%2Fberita.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Facebook</a></div>
+			</div>
 		</form>	
 	</div>
 </div>
