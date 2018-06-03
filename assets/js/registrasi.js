@@ -1,7 +1,7 @@
 $(document).ready(function () {
 $('#formregistrasi').jqxValidator({
 onError: function () {
-         alert('You have not filled the form correctly!');
+         alert('Maaf Data Yang Anda input Kurang');
      }, 
 onSuccess: function () {
          $('#formregistrasi').submit();
