@@ -9,9 +9,14 @@
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
   <link rel="stylesheet" type="text/css" href="assets/css/kebijakan.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> </head>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> 
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript " src="assets/js/theme.js"></script>
 
+</head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarutama">
     <a class="logosaya" href="index.html">
       <img class="toplogo" src="assets/img/logo.png" alt="Card img cap"> </a>
@@ -44,6 +49,10 @@
       </form>
     </div>
   </nav>
+
+  <!-- Profil -->
+  <div class="container mt-4">
+  <div class="card">
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -51,7 +60,7 @@
           <div class="row">
             <div class="col-md-12 bg-dark">
               <img class="img-fluid d-block rounded-circle mx-auto py-2" src="assets/img/7750-fb_avatar_0.jpg" width="150" height="150">
-              <p class="lead text-center">Muhammad Nugraha Jatun</p>
+              <p class="lead text-center">Hananto Ilham Bayuaji</p>
             </div>
           </div>
           <div class="row">
@@ -73,7 +82,27 @@
               <tr>
                 <td class="w-25">Profil Picture</td>
                 <td>
-                  <a href="#" class="btn btn-outline-primary" style="background-image: url('../icon-camera-128.png');background-position:center top;background-size:auto;background-repeat:no-repeat;"></a>
+               
+<!-- Upload  -->
+<form id="file-upload-form" class="uploader">
+  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+  <label for="file-upload" id="file-drag">
+    <img id="file-image" src="#" alt="Preview" class="hidden">
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select an image</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+</form>
                 </td>
               </tr>
               <tr>
@@ -84,20 +113,22 @@
             </tbody>
           </table>
           <br>
-          <div class="col-md-12">
+    <div class="col-md-12">
             <center>
               <a class="btn w-50 btn-primary" href="#">
                 <b class="text-dark">SAVE</b>
               </a>
             </center>
           </div>
+          </div>
+          </div>
           <br>
           <br> </div>
       </div>
     </div>
   </div>
-  <div class="row"> </div>
-  <div class="row">
+  <!-- Logo -->
+  <div class="row mb-4 mt-4">
     <div class="col-md-6">
       <img id="logoku" src="assets/img/logo.png" alt="Card image cap"> </div>
     <div class="col-md-6 ratakanan"> Ikuti Kami :
@@ -111,6 +142,8 @@
         <img class="imagesosmed" src="assets/img/yt.png" alt="Card image cap"> </a>
     </div>
   </div>
+
+  <!-- Footer -->
   <div class="row backgroud-green">
     <div class="col-md-3">
       <p>LAYANAN DONATUR</p>
@@ -151,6 +184,7 @@
       <a href="https://ibank.bni.co.id/">
         <img class="bank" src="assets/img/bni.png" alt="Card image cap"> </a>
     </div>
+  </div>
   </div>
 </body>
 
