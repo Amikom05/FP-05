@@ -70,13 +70,17 @@ h1
     z-index: 10;
 }
 .foto-overlay{
-    
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    padding: 40px;
-    z-index: 9;
+  position: relative;
+  z-index: 30;
+  padding: 100px 20px;
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  transition: opacity .10s .10s;
+  background: rgba(255,255,255,0.5);
 }
 .jumbotron.fotobg{
     padding: 0;
 
 }
+
