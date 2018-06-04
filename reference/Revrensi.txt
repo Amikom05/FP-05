@@ -16,3 +16,19 @@
   https://kitabisa.com/
   https://siapapeduli.id/
   https://www.dompetdhuafa.org/
+
+- Share button
+  https://developers.facebook.com/docs/plugins/
+  https://dev.twitter.com/web/tweet-button
+  youtube.com
+  https://bootsnipp.com/
+
+- jquery, Angular, 
+  https://www.w3schools.com/angular/
+  https://www.w3schools.com/jquery/
+  https://www.w3schools.com/bootstrap/default.asp
+  https://bootsnipp.com/
+  https://jqueryvalidation.org/
+  https://angular.io/
+  https://angularjs.org/  
+	
