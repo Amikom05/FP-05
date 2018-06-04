@@ -5,6 +5,21 @@ form {
     border: 3px solid white;
     background-color: white;
 }
+p{
+	font-family: sans-serif;
+}
+h2{
+	padding-top: 1em;
+}
+p.status{
+	font-size: 13px;
+}
+a.active{
+	text-decoration: underline;
+}
+input, textarea{
+	font-family: sans-serif;	
+}
 .jarak{
     margin: 10px;
 }
