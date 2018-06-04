@@ -5,6 +5,9 @@ form {
     border: 3px solid white;
     background-color: white;
 }
+p{
+	font-family: sans-serif;
+}
 .jarak{
     margin: 10px;
 }
@@ -12,4 +15,12 @@ form {
 	margin-top: 8px;
 	margin-bottom: 10px;
 }
-
+a.active{
+	text-decoration: underline;
+}
+#nominal{
+	padding-top: 2em;
+}
+input, textarea{
+	font-family: sans-serif;	
+}

@@ -1,6 +1,8 @@
 #judul{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-family: sans-serif;
+	font-size: 2em;
 }
 body{
     background-color: #f2f3f4;
@@ -8,4 +10,11 @@ body{
 
 img{
 	width: 30rem;
+}
+p{
+	font-family: sans-serif;
+	font-size: 1em;
+}
+#progres{
+	padding-top: 10px;
 }
