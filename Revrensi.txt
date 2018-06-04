@@ -1,0 +1,18 @@
+- maps
+  https://www.w3schools.com/graphics/google_maps_intro.asp
+  api key AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94
+
+- sistem navigasi
+  https://github.com/davist11/jQuery-One-Page-Nav
+
+- form validation
+  https://github.com/jquery-validation/jquery-validation/releases/tag/1.17.0
+
+- Custom domain Github pages https
+  https://id.000webhost.com/
+  https://github.com/
+
+- Contoh menu perbagian
+  https://kitabisa.com/
+  https://siapapeduli.id/
+  https://www.dompetdhuafa.org/
