@@ -13,8 +13,30 @@
     <script type="text/javascript" src="assets/js/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
     <script type="text/javascript " src="assets/js/beranda.js"></script>
+    <script type="text/javascript " src="assets/js/login.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <meta name="google-signin-client_id" content="310244644284-2e2vog822rvblm5hqjleee346uebfgdo.apps.googleusercontent.com">
+    <script type="text/javascript">
+      function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </head>
 <body style="height: 100%;">
 <!------ Include the above in your HEAD tag ---------->
@@ -60,10 +82,14 @@
         <input type="password" class="form-control" placeholder="Password" minlength="8" required>
         <span class="clearfix"></span>  
         </div>
+        <center>
+          <h5>SIGN WITH</h5>
+        <div id="my-signin2" onload="renderButton();"></div>
+        </center>
         <div class="">
         <div class="">
                         <div class="">
-                            <div class="left-section">
+                            <div class="center-section">
                                 <a href="registrasi.html">Sign up now</a>
                             </div>
                         </div>

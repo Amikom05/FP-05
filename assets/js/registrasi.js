@@ -9,7 +9,7 @@ onSuccess: function () {
      }, 
     rules: [
         { input: '#inputPassword4', message: 'Username is required!', action: 'keyup,blur', rule: 'required' },
-        { input: '#inputPassword4', message: 'Password Minimal 3 and 12 characters!', action: 'keyup,blur', rule: 'length=6,16' },
+        { input: '#inputPassword4', message: 'Password Minimal 3 and 12 characters!', action: 'keyup', rule: 'length=6,16' },
         ],
     
 });
