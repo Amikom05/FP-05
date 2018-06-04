@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<script type="text/javascript " src="assets/js/beranda.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -18,11 +19,8 @@
 </head>
 <body class="modal-open">
 <!------ Include the above in your HEAD tag ---------->
-
-<div class="container">
-       <div class="row">  
-    </div>
-</div>
+<!--Navbar-->
+ <div ng-include="'navbar.html'"></div>
 
 <div id="myModal" class="modal show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
   <div class="modal-dialog">
@@ -51,5 +49,7 @@
     </div>
   </div>
 </div>
+<!--footer.-->
+ <div ng-include="'footer.html'"> </div>
 </body>
 </html>
